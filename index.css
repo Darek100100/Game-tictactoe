@@ -1,0 +1,82 @@
+/* Add this link in the <head> section of your HTML */
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+body {
+    background-color: #e9e9e9;
+    font-family: 'Roboto', sans-serif; /* Ensures the entire page uses Roboto */
+}
+
+.inline {
+    display: inline-block;
+    top: 0;
+    vertical-align: top;
+}
+
+#choose, #players, #resert_div {
+    width: 400px;
+    height: auto;
+    text-align: center;
+    border: 1px solid red;
+    padding: 20px 0;
+    margin: 7px 0;
+    background-color: white;
+    color: red;
+}
+
+#one_player, #two_players, #reset {
+    padding: 5px;
+    background-color: red;
+    color: white;
+    border: none;
+}
+
+#play_with, #you_choose {
+    margin: 20px;
+    font-size: 20px;
+    color: red;
+}
+
+table {
+    max-width: 450px;
+    max-height: 450px;
+    margin: 5px auto;
+    background: linear-gradient(to right, #ffcc00, #ff6600);
+}
+
+td {
+    width: 150px;
+    height: 150px;
+    border: 1px solid red;
+    text-align: center;
+    font-size: 50px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 5px;
+    font-weight: bold; /* Makes the text bolder */
+    color: #333; /* Dark gray color for better contrast */
+    text-shadow: 1px 1px 2px black, 0 0 25px yellow, 0 0 5px darkorange; /* Adds shadows for 3D effect */
+}
+
+#helper {
+    display: none;
+}
+
+#statement {
+    max-width: 450px;
+    height: 150px;
+    margin: 50px auto;
+    border: 1px solid red;
+    text-align: center;
+    font-size: 30px;
+    background-color: white;
+    color: red;
+}
+
+@media screen and (max-width: 400px) {
+    .inline {
+        display: block;
+    }
+    
+    #choose, #players, #resert_div {
+        width: 100%;
+    }
+}
